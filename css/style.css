@@ -1,0 +1,56 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noticia Text", serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #DFDEDE;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-container {
+  margin: 1%;
+}
+
+#btn-languange {
+  color: #888888;
+  text-decoration: none;
+}
+
+#btn-languange:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lang-selected {
+  color: #333333 !important;
+}
+
+#btn-theme:hover {
+  cursor: pointer;
+}
+
+.night-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

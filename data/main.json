@@ -1,0 +1,11 @@
+{
+    "en" : {
+        "title" : "Get Knowledge",
+        "header" : "Todays Knowledge"
+    },
+    "id" : {
+        "title" : "Dapatkan Pengetahuan",
+        "header" : "Ilmu Hari ini",
+        "data_today_title" : "Hari ini"
+    }
+}

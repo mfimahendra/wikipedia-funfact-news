@@ -1,0 +1,57 @@
+$light: #ffffff;
+$semilight: #DFDEDE;
+$semibrightlight : #F8F9FA;
+$dark: #333333;
+$semidark: #888888;
+$bg-container: #f2f2f2;
+
+$serif: 'Noticia Text', serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-inline-start: 0;
+    scroll-behavior: smooth;
+}
+
+body {    
+    font-family: $serif;
+    color: $dark;
+    background-color: $light;    
+}
+
+header {
+    background-color: $semilight;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-container {
+    margin: 1%;
+}
+
+#btn-languange {
+    color: $semidark;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }    
+}
+
+.lang-selected {
+    color: $dark!important;        
+}
+
+#btn-theme {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.night-mode {
+    background-color: $dark;
+    color: $light;
+}
