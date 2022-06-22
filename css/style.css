@@ -27,6 +27,10 @@ header {
           align-items: center;
 }
 
+header #header {
+  width: 200px;
+}
+
 .body-container {
   margin: 1%;
 }

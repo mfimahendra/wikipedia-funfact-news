@@ -22,12 +22,16 @@ body {
     background-color: $newspaper;
 }
 
-header {
+header {    
     background-color: $semilight;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    #header {        
+        width: 200px;
+    }
 }
 
 .body-container {
