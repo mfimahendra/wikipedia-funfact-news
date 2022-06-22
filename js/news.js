@@ -12,3 +12,11 @@ fetch("https://newsapi.org/v2/top-headlines?country=id&apiKey=cd9a2be33d6e41abb7
             <hr>`);
         })
     })
+    .catch(error => {
+        console.log(error),
+        $("#data-news").append(`
+            <li>
+                <h5>There's no recent News</h5>                                
+            </li>
+            <hr>`);
+    })
