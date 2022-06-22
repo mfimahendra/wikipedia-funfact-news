@@ -129,8 +129,29 @@ header #header {
   color: #333333 !important;
 }
 
-#btn-theme:hover {
+#btn-instagram {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  text-decoration: none;
+  color: #333333;
+}
+
+#btn-instagram:hover {
   cursor: pointer;
+  color: #888888;
+}
+
+#btn-github {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333333;
+}
+
+#btn-github:hover {
+  cursor: pointer;
+  color: #888888;
 }
 
 .night-mode {

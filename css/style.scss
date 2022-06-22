@@ -132,9 +132,24 @@ header {
     color: $dark!important;        
 }
 
-#btn-theme {
+#btn-instagram {    
+    transition: 150ms;
+    text-decoration: none;
+    color: $dark;
     &:hover {
         cursor: pointer;
+        color: $semidark;
+    }
+}
+
+#btn-github {
+    transition: 150ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: $dark;
+    &:hover {
+        cursor: pointer;
+        color: $semidark;
     }
 }
 
