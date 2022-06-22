@@ -1,11 +1,16 @@
 {
     "en" : {
-        "title" : "Get Knowledge",
-        "header" : "Todays Knowledge"
+        "title" : "get Knowledge",
+        "header" : "Todays Knowledge",
+        "data_today_title" : "Do you know?",
+        "data_wiki_title" : "Wikipedia",
+        "data_news_title" : "News"
     },
     "id" : {
         "title" : "Dapatkan Pengetahuan",
         "header" : "Ilmu Hari ini",
-        "data_today_title" : "Hari ini"
-    }
+        "data_today_title" : "Tahukah Kamu?",
+        "data_wiki_title" : "Wikipedia",
+        "data_news_title" : "Berita"
+    }    
 }

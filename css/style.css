@@ -10,12 +10,12 @@
 body {
   font-family: "Noticia Text", serif;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #ACABAB;
 }
 
 header {
   background-color: #DFDEDE;
-  padding: 10px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +29,86 @@ header {
 
 .body-container {
   margin: 1%;
+}
+
+#data-today-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+#data-wiki-container {
+  margin: 0;
+}
+
+#data-wiki-container .wiki-lang {
+  font-size: 20px;
+}
+
+#data-wiki-container .wiki-lang input[name='wiki-lang'] {
+  cursor: pointer;
+}
+
+#data-wiki-container .wiki-lang label {
+  cursor: pointer;
+}
+
+#data-wiki-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+#data-news-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+#search-wiki {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#data-today {
+  text-align: justify;
+  height: 70vh;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+#data-today li {
+  list-style: none;
+  padding: 2%;
+}
+
+#data-news-container {
+  margin: 0;
+  padding: 16px;
+}
+
+#data-news {
+  text-align: justify;
+  height: 70vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#data-news li {
+  width: 100%;
+  padding: 0% 2%;
+  list-style: none;
+}
+
+#data-news li h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#data-news li p {
+  text-align: justify;
+  font-size: 14px;
 }
 
 #btn-languange {
@@ -52,5 +132,26 @@ header {
 .night-mode {
   background-color: #333333;
   color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 /*# sourceMappingURL=style.css.map */

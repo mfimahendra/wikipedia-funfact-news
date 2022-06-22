@@ -1,10 +1,7 @@
+
+
 const getLang = () => {
     return document.documentElement.lang;
-}
-console.log(getLang());
-
-const getElement = (id) => {
-    return document.querySelector(id);
 }
 
 fetch("./data/main.json")
@@ -13,9 +10,11 @@ fetch("./data/main.json")
         switch (getLang()) {
             case "id":
                 $(".lang-id").addClass("lang-selected");                
-                $("#title").html(data.id.title);        
+                // $("#title").html(data.id.title);                
                 $("#header").html(data.id.header);     
-                $("#data-today-title").html(data.id.data_today_title);   
+                $("#data-today-title").html(data.id.data_today_title);
+                $("#data-wiki-title").html(data.id.data_wiki_title);
+                $("#data-news-title").html(data.id.data_news_title);
                 break;
             default:
             case "en":
@@ -29,5 +28,4 @@ fetch("./data/main.json")
     .catch(error => 
         console.log(error)
     );
-
     

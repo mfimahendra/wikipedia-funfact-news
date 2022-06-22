@@ -35,35 +35,44 @@
         <span id="btn-theme"><i class='bx bxs-moon'></i></span>
     </header>
     <section class="body-container">
-        <div class="row mt-3">
+        <div class="row">            
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div id="data-wiki-container" class="card-body">
+                        <h5 id="data-wiki-title" class="card-title"></h5>
+                        <hr/>
+                        <div class="form-group wiki-lang">
+                            <input type="radio" value="id" name="wiki-lang" id="wiki-lang-id" checked>
+                            <label for="wiki-lang-id">id</label>
+                            <input type="radio" value="en" name="wiki-lang" id="wiki-lang-en">
+                            <label for="wiki-lang-en">en</label>
+                            <input type="radio" value="zh" name="wiki-lang" id="wiki-lang-zh">
+                            <label for="wiki-lang-zh">中文</label>
+                        </div>                        
+                        <input id="search-wiki" type="text" class="form-control" placeholder="Ketikkan Sesuatu ...">
+                        <hr/>                        
+                        <ol id="data-wiki">                    
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="data-today-container" class="card-body">
                         <h5 id="data-today-title" class="card-title "></h5>
                         <hr>
-                        <ol>
-                            <li></li>
+                        <ol id="data-today">                            
                         </ol>                        
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div id="data-news-container" class="card-body">
+                        <h5 id="data-news-title" class="card-title"></h5>
+                        <hr/>
+                        <ol id="data-news">                            
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -71,6 +80,7 @@
     </section>
 </body>
 <script async src="js/onready.js"></script>
-<script async src="js/wiki.js"></script>
+<script async src="js/wiki.js" type="text/javascript"></script>
+<script async src="js/news.js" type="text/javascript"></script>
 
 </html>

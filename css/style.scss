@@ -3,6 +3,8 @@ $semilight: #DFDEDE;
 $semibrightlight : #F8F9FA;
 $dark: #333333;
 $semidark: #888888;
+$newspaper: #ACABAB;
+$newspapercard: #ECDBCA;
 $bg-container: #f2f2f2;
 
 $serif: 'Noticia Text', serif;
@@ -17,12 +19,12 @@ $serif: 'Noticia Text', serif;
 body {    
     font-family: $serif;
     color: $dark;
-    background-color: $light;    
+    background-color: $newspaper;
 }
 
 header {
     background-color: $semilight;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +32,87 @@ header {
 
 .body-container {
     margin: 1%;
+}
+
+#data-today-title {
+    text-align: center;
+    font-weight: 800;
+}
+
+#data-wiki-container {
+    margin: 0;
+
+    .wiki-lang{ 
+        font-size: 20px;
+
+        input[name='wiki-lang'] {
+            cursor: pointer;
+        }
+        
+        label {
+            cursor: pointer;
+        }
+    }
+}
+
+#data-wiki-title {
+    text-align: center;
+    font-weight: 800;
+}
+
+#data-news-title {
+    text-align: center;
+    font-weight: 800;
+}
+
+
+#search-wiki {    
+    width: 100%;
+    padding: 5px;    
+    border-radius: 5px;                
+}
+
+#data-today {    
+    text-align: justify;    
+    height: 70vh;
+    overflow-y: scroll;
+    padding: 0;
+
+    li {                
+        list-style: none;
+        padding: 2%;
+    }
+}
+
+#data-news-container {
+    margin: 0;
+    padding: 16px;
+}
+
+#data-news {    
+    text-align: justify;    
+    height: 70vh;
+    overflow-y: scroll;    
+    scrollbar-width: thin;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    li {                
+        width: 100%;
+        padding: 0% 2%;
+        list-style: none;        
+
+        h5 {
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 14px;
+        }
+    }
 }
 
 #btn-languange {
@@ -55,3 +138,25 @@ header {
     background-color: $dark;
     color: $light;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
