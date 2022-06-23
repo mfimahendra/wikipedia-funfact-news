@@ -1,3 +1,5 @@
+alert("https://cors-anywhere.herokuapp.com/ Request temporary cors-anywhere agar API dapat berjalan, untuk news API saya bisa pakai saat di localhost")
+
 const getLang = () => {
     return document.documentElement.lang;
 }
