@@ -1,8 +1,8 @@
 //Saya menggunakan local cors-anywhere
 //https://cors-anywhere.herokuapp.com/ untuk cors online hosting 
-const cors = "";
-// const cors = "http://localhost:9090/";
-fetch(`${cors}https://cinnabar.icaksh.my.id/api/public/daily/wiki`)
+const cors_web = "https://cors-anywhere.herokuapp.com/";
+// const cors_local = "http://localhost:9090/";
+fetch(`${cors_web}https://cinnabar.icaksh.my.id/api/public/daily/wiki`)
     .then(response => response.json())
     .then(data => {                        
         data.data.forEach(ele => {            
@@ -20,7 +20,7 @@ searchWiki.on("keyup", function () {
     let wikiLang = $("input[name='wiki-lang']:checked").val();
     let search = $(this).val();
     if (search.length > 0) {
-        fetch(`${cors}https://${wikiLang}.wikipedia.org/w/api.php?action=opensearch&format=json&search=${search}`)
+        fetch(`${cors_web}https://${wikiLang}.wikipedia.org/w/api.php?action=opensearch&format=json&search=${search}`)
             .then(response => response.json())
             .then(data => {                
                 $("#data-wiki").html("");                                
